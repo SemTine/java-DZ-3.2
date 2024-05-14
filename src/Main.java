@@ -3,14 +3,16 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        double bodyMass = 98;
-        double height = 1.87;
-        double imt = service.canculate(bodyMass, height);
 
-        System.out.println("Вашь вес " + bodyMass + "kg");
+        double weight = 98;
+        double height = 1.87;
+        double imt = service.canculate(weight, height);
+
+        System.out.println("Вашь вес " + weight + "kg");
         System.out.println("И рост " + height + "m");
-        System.out.println("Эквивалетно " + imt + ".");
+        System.out.println("Эквивалетно " + (int) imt);
 
     }
 
 }
+

@@ -1,9 +1,10 @@
 public class BmiService {
-    public double canculate(double bodyMass, double height) {
+    public double canculate(double weight, double height) {
 
         double boydMassIndex;
-        boydMassIndex = bodyMass / (height * height);
+        boydMassIndex = weight / (height * height);
         return boydMassIndex;
-
     }
+
 }
+
